@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFViewExample", "src\WFViewExample\WFViewExample.csproj", "{BC16C11F-5D1D-FF0E-061A-1BC11273BFED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassController", "src\ClassController\ClassController.csproj", "{AA5228F8-24FE-4AFA-BEAF-170A088B7653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{BC16C11F-5D1D-FF0E-061A-1BC11273BFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC16C11F-5D1D-FF0E-061A-1BC11273BFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC16C11F-5D1D-FF0E-061A-1BC11273BFED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5228F8-24FE-4AFA-BEAF-170A088B7653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5228F8-24FE-4AFA-BEAF-170A088B7653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5228F8-24FE-4AFA-BEAF-170A088B7653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5228F8-24FE-4AFA-BEAF-170A088B7653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC16C11F-5D1D-FF0E-061A-1BC11273BFED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AA5228F8-24FE-4AFA-BEAF-170A088B7653} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {966A2733-30D4-4DF9-B791-08B2087C18DA}
