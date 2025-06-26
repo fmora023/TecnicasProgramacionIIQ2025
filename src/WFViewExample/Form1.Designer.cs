@@ -33,12 +33,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1175, 477);
+            button1.Location = new Point(55, 48);
             button1.Name = "button1";
             button1.Size = new Size(172, 94);
             button1.TabIndex = 0;
-            button1.Text = "My Button 1";
+            button1.Text = "CalculatorFrm";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -47,7 +48,7 @@
             ClientSize = new Size(1480, 651);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "myForm1";
+            Text = "Main Menu";
             ResumeLayout(false);
         }
 

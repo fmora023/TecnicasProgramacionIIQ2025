@@ -1,3 +1,5 @@
+using ClassController;
+
 namespace WFViewExample
 {
     public partial class Form1 : Form
@@ -5,6 +7,12 @@ namespace WFViewExample
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var calcFrm = new CalculatorFrm(new Calculator());
+            calcFrm.Show();
         }
     }
 }
