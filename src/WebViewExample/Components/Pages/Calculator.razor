@@ -1,0 +1,54 @@
+﻿@page "/calculator"
+@using ClassController
+@using ClassController.Interfaces
+@rendermode InteractiveServer
+
+<h3>Calculator</h3>
+
+<label>
+    <span>Valor 1</span>
+    <input type="number" @bind="Value1" />
+</label>
+
+<label>
+    <span>Valor 2</span>
+    <input @bind="Value2" />
+</label>
+
+<h4>Resultado: @Result </h4>
+
+<button @onclick="@Sum">Sum</button>
+
+@if (string.IsNullOrEmpty(ErrorText) == false)
+{
+    <label>@ErrorText</label>
+    <button @onclick="@(() => ErrorText = string.Empty)">Clear</button>
+}
+
+@code {
+
+    private int Value1 { get; set; } = 0;
+    private string Value2 { get; set; } = string.Empty;
+    private int Result { get; set; } = 0;
+    private string ErrorText { get; set; } = string.Empty;
+    private ICalculator Calc { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        this.Calc = new ClassController.Calculator();
+    }
+
+    private void Sum()
+    {
+        var input2 = ArgumentUtilities.ParseStringToInt(this.Value2);
+        if (input2 == null)
+        {
+            this.Result = 0;
+            this.ErrorText = "Invalid input for Value 2. Please enter a valid integer.";
+            return;
+        }
+        this.Result = this.Calc.Sum(this.Value1, input2.Value);
+        this.ErrorText = string.Empty;
+    }
+}

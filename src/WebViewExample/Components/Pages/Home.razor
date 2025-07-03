@@ -1,0 +1,15 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+<button @onclick="@Clicked">Calculator</button>
+
+@code
+{
+    public void Clicked()
+    {
+        NavigationManager.NavigateTo("/calculator");
+    }
+}

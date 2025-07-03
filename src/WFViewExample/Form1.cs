@@ -14,5 +14,11 @@ namespace WFViewExample
             var calcFrm = new CalculatorFrm(new Calculator());
             calcFrm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var examplesFrm = new Examples();
+            examplesFrm.Show();
+        }
     }
 }

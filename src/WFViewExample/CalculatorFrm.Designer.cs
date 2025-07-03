@@ -69,11 +69,11 @@
             label1.TabIndex = 3;
             label1.Text = "Valor 1";
             // 
-            // label2
+            // lbl_ResultEx1
             // 
             label2.AutoSize = true;
             label2.Location = new Point(283, 205);
-            label2.Name = "label2";
+            label2.Name = "lbl_ResultEx1";
             label2.Size = new Size(55, 20);
             label2.TabIndex = 4;
             label2.Text = "Valor 2";
