@@ -13,8 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ClassExampleModels\ClassExampleModels.csproj" />
-  </ItemGroup>
-
 </Project>

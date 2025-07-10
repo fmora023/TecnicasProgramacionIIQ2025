@@ -1,3 +1,5 @@
+using ClassController.CarProject;
+
 namespace WFViewExample
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace WFViewExample
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            var userController = new UserOperations(Constants.UsersFileName);
+            Application.Run(new LoginFrm(userController));
         }
     }
 }

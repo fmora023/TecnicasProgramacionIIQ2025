@@ -32,15 +32,15 @@
             button2 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // LoginBtn
             // 
             button1.Location = new Point(55, 48);
-            button1.Name = "button1";
+            button1.Name = "LoginBtn";
             button1.Size = new Size(172, 94);
             button1.TabIndex = 0;
             button1.Text = "CalculatorFrm";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += Button1_Click;
             // 
             // button2
             // 
@@ -50,7 +50,7 @@
             button2.TabIndex = 1;
             button2.Text = "Examples";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += Button2_Click;
             // 
             // Form1
             // 
