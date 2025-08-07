@@ -10,7 +10,7 @@ namespace ClassController.CarProject
     {
         private string FileName { get; set; }
 
-        private List<User> Users { get; set; }
+        public List<User> Users { get; set; }
 
         private IDataHandler<User> DataHandler { get; set; }
 
@@ -18,10 +18,10 @@ namespace ClassController.CarProject
         /// Initializes a new instance of the <see cref="UserOperations"/> class.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
-        public UserOperations(string fileName)
+        public UserOperations(string fileName, IDataHandler<User> handler)
         {
             FileName = fileName;
-            DataHandler = new FileHandler<User>();
+            DataHandler = handler;
             Users = Load();
         }
 

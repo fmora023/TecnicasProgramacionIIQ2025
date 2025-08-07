@@ -1,4 +1,5 @@
 using ClassController.CarProject;
+using ClassExampleModels;
 
 namespace WFViewExample
 {
@@ -13,7 +14,7 @@ namespace WFViewExample
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            var userController = new UserOperations(Constants.UsersFileName);
+            var userController = new UserOperations(Constants.UsersFileName, new FileHandler<User>());
             Application.Run(new LoginFrm(userController));
         }
     }

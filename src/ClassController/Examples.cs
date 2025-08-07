@@ -36,7 +36,7 @@
                 return result;
             }
 
-            /*var elementsArray = elements.Split(',');
+            var elementsArray = elements.Split(',');
 
 
             foreach (var element in elementsArray)
@@ -45,13 +45,18 @@
                 {
                     result.Add(number);
                 }
-            }*/
+            }
 
-            var str = string.Empty;
+            /*var str = string.Empty;
             for (var i = 0; i <= elements.Length; i++)
             {
                 if (i == elements.Length && str != ",")
                 {
+                    if (string.IsNullOrWhiteSpace(str))
+                    {
+                        continue;
+                    }
+
                     result.Add(int.Parse(str.Trim()));
                 }
                 else if (elements[i] != ',')
@@ -67,7 +72,7 @@
                     }
                     str = string.Empty;
                 }
-            }
+            }*/
 
             return result;
         }

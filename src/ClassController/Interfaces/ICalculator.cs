@@ -22,5 +22,13 @@ namespace ClassController.Interfaces
         /// <param name="input2">The input2.</param>
         /// <returns></returns>
         public int Mult(int input1, int input2);
+
+        /// <summary>
+        /// Divs the specified input1.
+        /// </summary>
+        /// <param name="input1">The input1.</param>
+        /// <param name="input2">The input2.</param>
+        /// <returns></returns>
+        public decimal Div(int input1, int input2);
     }
 }

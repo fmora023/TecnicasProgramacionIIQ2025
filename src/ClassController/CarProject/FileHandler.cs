@@ -8,7 +8,7 @@ namespace ClassController.CarProject
     /// Impltation of result handling operations when we are using the filesystem.
     /// </summary>
     /// <seealso cref="ClassController.Interfaces.IDataHandler" />
-    internal class FileHandler<T> : IDataHandler<T>
+    public class FileHandler<T> : IDataHandler<T>
         where T : class
     {
         /// <summary>

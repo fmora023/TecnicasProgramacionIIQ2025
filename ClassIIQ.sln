@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewExample", "src\WebVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExampleModels", "src\ClassExampleModels\ClassExampleModels.csproj", "{027A61E5-4001-4A82-A9BE-5C04D70A543E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E1A97154-2B23-4C74-86F8-F09B327BDE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassController.Test", "test\ClassController.Test\ClassController.Test.csproj", "{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{027A61E5-4001-4A82-A9BE-5C04D70A543E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{027A61E5-4001-4A82-A9BE-5C04D70A543E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{027A61E5-4001-4A82-A9BE-5C04D70A543E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{AA5228F8-24FE-4AFA-BEAF-170A088B7653} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{B2110B61-ACEA-4310-8CED-C0F92EB6D5F5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{027A61E5-4001-4A82-A9BE-5C04D70A543E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{32A5AEAE-BC7F-4D70-8EA6-6E28FE8C8E00} = {E1A97154-2B23-4C74-86F8-F09B327BDE44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {966A2733-30D4-4DF9-B791-08B2087C18DA}
